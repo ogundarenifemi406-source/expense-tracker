@@ -1,14 +1,22 @@
-<link rel="stylesheet" href="style.css">
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Expense Tracker</title>
 
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-  <div class="app">
+  <main class="app">
 
     <h1>Expense Tracker</h1>
     <p class="subtitle">Keep track of your spending.</p>
 
-    <div class="expense-form">
+    <section class="expense-form">
 
       <input
         type="text"
@@ -20,6 +28,7 @@
         type="number"
         id="expenseAmount"
         placeholder="Amount (₦)"
+        min="1"
       >
 
       <select id="expenseCategory">
@@ -32,14 +41,14 @@
 
       <button id="addExpenseBtn">Add Expense</button>
 
-    </div>
+    </section>
 
-    <div class="total">
+    <section class="total">
       <p>Total Spending</p>
       <h2>₦<span id="totalAmount">0</span></h2>
-    </div>
+    </section>
 
-    <div class="category-summary">
+    <section class="category-summary">
 
       <h3>Spending by Category</h3>
 
@@ -48,10 +57,13 @@
       <p>School: ₦<span id="schoolTotal">0</span></p>
       <p>Other: ₦<span id="otherTotal">0</span></p>
 
-    </div>
+    </section>
 
     <ul id="expenseList"></ul>
 
-  </div>
+  </main>
 
   <script src="script.js"></script>
+
+</body>
+</html>
