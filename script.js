@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
   const expenseName = document.getElementById("expenseName");
@@ -100,13 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   addExpenseBtn.addEventListener("click", addExpense);
 
-  expenseAmount.addEventListener("keydown", function (event) {
+  expenseName.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
       addExpense();
     }
   });
 
-  expenseName.addEventListener("keydown", function (event) {
+  expenseAmount.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
       addExpense();
     }
